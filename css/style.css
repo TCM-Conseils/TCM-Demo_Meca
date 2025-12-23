@@ -1,0 +1,696 @@
+:root {
+    --primary: #DC2626;
+    --secondary: #1F2937;
+    --light: #F3F4F6;
+    --dark: #0F172A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #4B5563;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Spinner */
+#spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+#spinner.hide {
+    display: none;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid var(--light);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Topbar */
+.topbar {
+    background-color: var(--light);
+    padding: 15px 0;
+    border-bottom: 3px solid var(--primary);
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-section i {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.logo-section h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--dark);
+}
+
+.topbar-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-item i {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: var(--primary);
+}
+
+.emergency-contact {
+    background: var(--primary);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emergency-contact i {
+    font-size: 1.5rem;
+}
+
+.emergency-contact .text h5 {
+    margin: 0;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.emergency-contact .text p {
+    margin: 0;
+    color: #FEE2E2;
+    font-size: 0.85rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.caaquebec.com/_next/image?url=https%3A%2F%2Fimages.contentstack.io%2Fv3%2Fassets%2Fblt4cb7085064c0b32f%2Fblt80568ee01b22c187%2F6740d095ede4168486a1ca69%2F1920x1080-garage-recommande-mecanique-generale.jpg&w=3840&q=75');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: var(--secondary);
+    -webkit-text-stroke: 2px white;
+    text-stroke : 2px white;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #E5E7EB;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #B91C1C;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #374151;
+    transform: translateY(-2px);
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background: white;
+}
+
+.services h6 {
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.2);
+}
+
+.service-card .icon-box {
+    background: var(--primary);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.service-card .img-box {
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.service-card:hover .img-box img {
+    transform: scale(1.1);
+}
+
+.service-card .content {
+    padding: 25px;
+    text-align: center;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: var(--light);
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about h6 {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.about .feature i {
+    color: #10B981;
+}
+
+.about-img-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.emergency-box {
+    background: var(--primary);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.emergency-box i {
+    font-size: 3rem;
+}
+
+/* Stats, Team, Chatbot, Map, Footer, Back to Top... (tout le reste du CSS précédent) */
+
+/* Stats Section */
+.stats {
+    background: var(--secondary);
+    color: white;
+    padding: 60px 0;
+}
+
+.stats .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.stat-item h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    color: #D1D5DB;
+}
+
+/* Style pour le texte cliquable du chatbot */
+.chatbot-clickable {
+    font-weight: 600;
+    color: var(--primary);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.chatbot-clickable:hover {
+    color: #B91C1C; /* Version plus foncée du rouge */
+    text-decoration-color: #B91C1C;
+    transform: translateY(-2px);
+}
+
+/* Style pour les éléments cliquables d'urgence */
+.emergency-clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.emergency-contact:hover,
+.emergency-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3);
+}
+
+
+/* Team Section */
+.team {
+    padding: 80px 0;
+    background: white;
+}
+
+.team h6 {
+    color: var(--primary);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-card .avatar {
+    height: 250px; /* Réduit de 300px à 250px */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 12px 0 0; /* Coins arrondis seulement en haut */
+}
+
+.team-card .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Positionne mieux les visages */
+    transition: transform 0.4s;
+    border-radius: 12px 12px 0 0; /* Coins arrondis seulement en haut */
+}
+
+.team-card:hover .avatar img {
+    transform: scale(1.05); /* Effet zoom plus subtil */
+}
+
+.team-card .info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-card h4 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+.team-card small {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+
+/* Chatbot Section */
+.chatbot-section {
+    padding: 80px 0;
+    background: var(--light);
+}
+
+.chatbot-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    padding: 50px;
+    text-align: center;
+}
+
+.chatbot-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.chatbot-container p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #6B7280;
+}
+
+.chat-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.chat-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Map Section */
+.map-section {
+    padding: 80px 0;
+}
+
+.map-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+}
+
+.footer p, .footer a {
+    color: #D1D5DB;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.footer a:hover {
+    color: var(--primary);
+}
+
+.footer form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background: #1F2937;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer form button {
+    width: 100%;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #374151;
+    color: #9CA3AF;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: #374151;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--primary);
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s;
+}
+
+.back-to-top:hover {
+    background: #B91C1C;
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .topbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+
+    .emergency-contact {
+        margin-top: 20px;
+    }
+}

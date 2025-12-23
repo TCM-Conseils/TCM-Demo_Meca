@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>AutoExpert Québec – Mécanique automobile de confiance</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="garage mécanique québec, réparation auto, entretien voiture" name="keywords">
+    <meta content="Garage mécanique à Québec - Service rapide et professionnel pour tous types de véhicules" name="description">
+
+    <!-- Favicon -->
+    <link href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS externe -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="logo-section">
+                <i class="fas fa-car-mechanic"></i>
+                <h1>AutoExpert Québec</h1>
+            </div>
+            <div class="topbar-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>455 Boulevard Charest E, Québec, QC</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@autoexpert-qc.ca</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Notre Équipe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="emergency-contact" onclick="openQuebotiaChat()" style="cursor: pointer;">
+                <i class="fas fa-phone-alt"></i>
+                <div class="text">
+                    <p>Urgence 24/7</p>
+                    <h5>📞 +1 418 555 AUTO</h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Experts en Mécanique Automobile</h1>
+            <p>Réparation, entretien et diagnostic - Service rapide et professionnel partout au Québec</p>
+            <a href="#services" class="btn btn-primary">Nos Services</a>
+            <a href="#" class="btn btn-secondary" onclick="Quebotia.open(); return false;">Prendre Rendez-vous</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h6>Nos Services</h6>
+            <h2>Que pouvons-nous faire pour vous ?</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-oil-can"></i></div>
+                    <div class="img-box">
+                        <img src="https://bullet-automotive.com/wp-content/uploads/2024/11/AdobeStock_251971442-scaled.jpeg" alt="Vidange d'huile">
+                    </div>
+                    <div class="content">
+                        <h3>Vidange d'Huile</h3>
+                        <p>Changement d'huile moteur complet avec filtre. Service rapide et prix compétitifs.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-car-crash"></i></div>
+                    <div class="img-box">
+                        <img src="https://www.brakes-4-less.com/wp-content/uploads/1716470978817.jpg.webp" alt="Freins & Suspensions">
+                    </div>
+                    <div class="content">
+                        <h3>Freins & Suspensions</h3>
+                        <p>Réparation et remplacement de freins, amortisseurs et système de suspension complet.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-cog"></i></div>
+                    <div class="img-box">
+                        <img src="https://auto.edu/hubfs/shutterstock_2470156997.jpg" alt="Réparation moteur">
+                    </div>
+                    <div class="content">
+                        <h3>Réparation Moteur</h3>
+                        <p>Diagnostic et réparation de tous types de moteurs. Experts certifiés et équipement moderne.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-battery-full"></i></div>
+                    <div class="img-box">
+                        <img src="https://www.autotrainingcentre.com/wp-content/uploads/2021/11/Nov-24-Auto-Technician-courses.jpg" alt="Système électrique">
+                    </div>
+                    <div class="content">
+                        <h3>Système Électrique</h3>
+                        <p>Diagnostic électrique, batterie, alternateur, démarreur et système de charge.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-tire"></i></div>
+                    <div class="img-box">
+                        <img src="https://www.pamperedautocare.com/wp-content/uploads/2017/11/wheel-alignment-austin-round-rock-cedar-park-pampered-auto-care-02-2418x1662.jpg" alt="Pneus & Alignement">
+                    </div>
+                    <div class="content">
+                        <h3>Pneus & Alignement</h3>
+                        <p>Changement de pneus, équilibrage, rotation et alignement de roues professionnel.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-tools"></i></div>
+                    <div class="img-box">
+                        <img src="https://pictures.dealer.com/j/jungeautomotivegroup/0708/786731f61768c947b3abd627419666dfx.jpg" alt="Entretien préventif">
+                    </div>
+                    <div class="content">
+                        <h3>Entretien Préventif</h3>
+                        <p>Inspection complète, mise au point et entretien régulier pour prolonger la vie de votre véhicule.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div>
+                <h6>À Propos De Nous</h6>
+                <h2>Votre Garage de Confiance Depuis 1995</h2>
+                <p>Depuis plus de 25 ans, AutoExpert Québec est votre partenaire de confiance pour l'entretien et la réparation de tous types de véhicules. Notre équipe de mécaniciens certifiés possède l'expertise et l'équipement nécessaire pour diagnostiquer et réparer efficacement votre automobile.</p>
+                <p><em>« Quand votre voiture a besoin d'attention, faites confiance à AutoExpert ! »</em></p>
+                
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mécaniciens Certifiés & Expérimentés</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Équipement Moderne & Diagnostic Informatisé</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Service Rapide 24h/7j Pour Urgences</span>
+                </div>
+
+                <div class="emergency-box" onclick="openQuebotiaChat()" style="cursor: pointer;">
+                    <i class="fas fa-phone-volume"></i>
+                    <div>
+                        <p>Urgence 24/7</p>
+                        <h3>📞 +1 418 555 AUTO</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img-container">
+                <img src="https://autosphere.ca/wp-content/uploads/2025/01/AS_Rosato_mars-2025_IH_3-min-1024x683.jpg" alt="Intérieur du garage AutoExpert Québec">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <i class="fas fa-calendar-check"></i>
+                <h2>25+</h2>
+                <p>Années d'Expérience</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users-cog"></i>
+                <h2>15</h2>
+                <p>Mécaniciens Experts</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-smile"></i>
+                <h2>5000+</h2>
+                <p>Clients Satisfaits</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-wrench"></i>
+                <h2>8500+</h2>
+                <p>Véhicules Réparés</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Team Section -->
+<section class="team" id="team">
+    <div class="container">
+        <h6 style="color: var(--primary); text-transform: uppercase; text-align: center;">Notre Équipe</h6>
+        <h2>Des Mécaniciens Passionnés à Votre Service</h2>
+        
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="avatar">
+                    <img src="https://img.freepik.com/premium-photo/medium-shot-portrait-smiling-handsome-professional-male-car-mechanic-uniform-standing-inspe_482921-2318.jpg" alt="Jean-François Tremblay">
+                </div>
+                <div class="info">
+                    <h4>Jean-François Tremblay</h4>
+                    <small>Maître Mécanicien</small>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="avatar">
+                    <img src="https://img.freepik.com/premium-photo/beautiful-portrait-professional-female-auto-mechanic-woman-stands-against-background-raised-car-holding-pen-her-hands-looks-into-camera_275234-2863.jpg" alt="Marie-Claude Gagnon">
+                </div>
+                <div class="info">
+                    <h4>Marie-Claude Gagnon</h4>
+                    <small>Spécialiste Moteur</small>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="avatar">
+                    <img src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=" alt="Patrick Bélanger">
+                </div>
+                <div class="info">
+                    <h4>Patrick Bélanger</h4>
+                    <small>Expert Électrique</small>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="avatar">
+                    <img src="https://media.gettyimages.com/id/1162113364/photo/auto-mechanic-working-with-car-diagnostic-tool-in-a-repair-shop.jpg?s=1024x1024&w=gi&k=20&c=tLg_QEgwCqwq5IP5nu3rX1N76VORBMo-fzmFW8sigoY=" alt="Sophie Lavoie">
+                </div>
+                <div class="info">
+                    <h4>Sophie Lavoie</h4>
+                    <small>Diagnostic & Inspection</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Chatbot Section -->
+    <section class="chatbot-section">
+        <div class="container">
+            <div class="chatbot-container">
+                <h2>🤖 Besoin d'Aide Immédiate ?</h2>
+                <p>Discutez avec notre assistant virtuel pour obtenir des conseils, poser vos questions techniques ou prendre rendez-vous en quelques clics.</p>
+                
+                <div class="chat-icon" onclick="openQuebotiaChat()" style="cursor: pointer;">
+                    <i class="fas fa-comments"></i>
+                </div>
+                
+                <p style="chatbot-clickable"onclick="openQuebotiaChat()">👇 Cliquez pour discuter 👇</p>
+                
+                <div>
+                    <p><strong>Notre assistant peut vous aider avec :</strong></p>
+                    <ul>
+                        <li>✓ Prendre rendez-vous rapidement</li>
+                        <li>✓ Diagnostic de base de votre problème</li>
+                        <li>✓ Estimation de prix</li>
+                        <li>✓ Conseils d'entretien</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="contact">
+        <div class="container">
+            <h2>Notre Localisation</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43453.77899457279!2d-71.28223649999999!3d46.813878399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb895d8bd0d1e67%3A0xd834755ca25bf0b7!2sQuebec%20City%2C%20QC!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <h4>Adresse</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 455 Boulevard Charest E, Québec, QC</p>
+                <p><i class="fas fa-phone-alt"></i> +1 418 555 AUTO (2886)</p>
+                <p><i class="fas fa-envelope"></i> contact@autoexpert-qc.ca</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Heures d'Ouverture</h4>
+                <p><strong>Lundi - Vendredi:</strong> 7h00 - 18h00</p>
+                <p><strong>Samedi:</strong> 8h00 - 14h00</p>
+                <p><strong>Dimanche:</strong> Urgences seulement</p>
+            </div>
+
+            <div>
+                <h4>Nos Services</h4>
+                <a href="#services">Vidange d'Huile</a>
+                <a href="#services">Freins & Suspensions</a>
+                <a href="#services">Réparation Moteur</a>
+                <a href="#services">Système Électrique</a>
+                <a href="#services">Pneus & Alignement</a>
+                <a href="#services">Entretien Préventif</a>
+            </div>
+
+            <div>
+                <h4>Restez Informé</h4>
+                <p>Recevez nos conseils d'entretien et promotions exclusives par courriel.</p>
+                <form>
+                    <input type="email" placeholder="Votre email">
+                    <button type="submit" class="btn btn-primary">S'Inscrire</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AutoExpert Québec. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Script du chatbot Quebotia (une seule fois, à la fin) -->
+    <script src="js/main.js"></script>
+    <script src="https://embed.quebotia.com/js/chatbot-bundle.min.js"></script>
+    <script>
+        // Initialize the chatbot widget
+        TCMChatbot.init({
+            company_name: "Demo Company",
+            TCM_API_KEY: "tcm_1765855828_xvMXe254rv4XG7Mw8JmZXAT1s-0NJfm8sqXZ032y9fQ",
+            headerColor: "#007bff",
+            sendButtonColor: "#28a745",
+            label: "Écrivez votre message...",
+            pageLink: "/chat-demo",
+            height: '680px',
+            width : '400px'
+        });
+
+
+    //     window.Quebotia = {
+    //     open: function() {
+    //         // Ouvrir le chatbot
+    //         if (typeof TCMChatbot !== 'undefined') {
+    //             TCMChatbot.openChat();
+    //         }
+    //     }
+    // };
+    // Attend que Quebotia (ou TCMChatbot) soit chargé
+function openQuebotiaChat() {
+    if (typeof Quebotia !== 'undefined' && typeof Quebotia.open === 'function') {
+        Quebotia.open();
+    } else if (typeof TCMChatbot !== 'undefined' && typeof TCMChatbot.openChat === 'function') {
+        TCMChatbot.openChat();
+    } else {
+        alert('Chatbot pas encore chargé, réessaie dans 2 secondes');
+    }
+}
+
+    </script>
+
+</body>
+</html>
