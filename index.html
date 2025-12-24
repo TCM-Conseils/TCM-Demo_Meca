@@ -59,13 +59,13 @@
                 <li><a href="#team">Notre Équipe</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="emergency-contact" onclick="openQuebotiaChat()" style="cursor: pointer;">
+            <a href="https://yellow-pebble-0d33cd20f.6.azurestaticapps.net/tcm-page?API_KEY=tcm_1765855828_xvMXe254rv4XG7Mw8JmZXAT1s-0NJfm8sqXZ032y9fQ" class="emergency-contact" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
                 <i class="fas fa-phone-alt"></i>
                 <div class="text">
                     <p>Urgence 24/7</p>
                     <h5>📞 +1 418 555 AUTO</h5>
                 </div>
-            </div>
+            </a>
         </div>
     </nav>
 
@@ -75,7 +75,7 @@
             <h1>Experts en Mécanique Automobile</h1>
             <p>Réparation, entretien et diagnostic - Service rapide et professionnel partout au Québec</p>
             <a href="#services" class="btn btn-primary">Nos Services</a>
-            <a href="#" class="btn btn-secondary" onclick="Quebotia.open(); return false;">Prendre Rendez-vous</a>
+            <a href="https://yellow-pebble-0d33cd20f.6.azurestaticapps.net/tcm-page?API_KEY=tcm_1765855828_xvMXe254rv4XG7Mw8JmZXAT1s-0NJfm8sqXZ032y9fQ" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Prendre Rendez-vous</a>
         </div>
     </section>
 
@@ -177,13 +177,13 @@
                     <span>Service Rapide 24h/7j Pour Urgences</span>
                 </div>
 
-                <div class="emergency-box" onclick="openQuebotiaChat()" style="cursor: pointer;">
+                <a href="https://yellow-pebble-0d33cd20f.6.azurestaticapps.net/tcm-page?API_KEY=tcm_1765855828_xvMXe254rv4XG7Mw8JmZXAT1s-0NJfm8sqXZ032y9fQ" class="emergency-box" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
                     <i class="fas fa-phone-volume"></i>
                     <div>
                         <p>Urgence 24/7</p>
                         <h3>📞 +1 418 555 AUTO</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="about-img-container">
                 <img src="https://autosphere.ca/wp-content/uploads/2025/01/AS_Rosato_mars-2025_IH_3-min-1024x683.jpg" alt="Intérieur du garage AutoExpert Québec">
@@ -274,16 +274,16 @@
                 <h2>🤖 Besoin d'Aide Immédiate ?</h2>
                 <p>Discutez avec notre assistant virtuel pour obtenir des conseils, poser vos questions techniques ou prendre rendez-vous en quelques clics.</p>
                 
-                <div class="chat-icon" onclick="openQuebotiaChat()" style="cursor: pointer;">
+                <div class="chat-icon" style="cursor: pointer;">
                     <i class="fas fa-comments"></i>
                 </div>
                 
-                <p style="chatbot-clickable"onclick="openQuebotiaChat()">👇 Cliquez pour discuter 👇</p>
+                <p style="chatbot-clickable"><a href="https://yellow-pebble-0d33cd20f.6.azurestaticapps.net/tcm-page?API_KEY=tcm_1765855828_xvMXe254rv4XG7Mw8JmZXAT1s-0NJfm8sqXZ032y9fQ" class="chatbot-clickable" target="_blank" rel="noopener noreferrer">👇 Cliquez pour discuter 👇</a></p>
                 
                 <div>
                     <p><strong>Notre assistant peut vous aider avec :</strong></p>
                     <ul>
-                        <li>✓ Prendre rendez-vous rapidement</li>
+                        <li>✓Prendre rendez-vous rapidement</li>
                         <li>✓ Diagnostic de base de votre problème</li>
                         <li>✓ Estimation de prix</li>
                         <li>✓ Conseils d'entretien</li>
@@ -369,26 +369,6 @@
             height: '680px',
             width : '400px'
         });
-
-
-    //     window.Quebotia = {
-    //     open: function() {
-    //         // Ouvrir le chatbot
-    //         if (typeof TCMChatbot !== 'undefined') {
-    //             TCMChatbot.openChat();
-    //         }
-    //     }
-    // };
-    // Attend que Quebotia (ou TCMChatbot) soit chargé
-function openQuebotiaChat() {
-    if (typeof Quebotia !== 'undefined' && typeof Quebotia.open === 'function') {
-        Quebotia.open();
-    } else if (typeof TCMChatbot !== 'undefined' && typeof TCMChatbot.openChat === 'function') {
-        TCMChatbot.openChat();
-    } else {
-        alert('Chatbot pas encore chargé, réessaie dans 2 secondes');
-    }
-}
 
     </script>
 
